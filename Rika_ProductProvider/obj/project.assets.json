@@ -4554,11 +4554,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\felix\\source\\repos\\Rika_ProductProvider\\Rika_ProductProvider\\Rika_ProductProvider.csproj",
+      "projectUniqueName": "C:\\PROGRAMMERING\\Projekt\\Rika_ProductProvider\\Rika_ProductProvider.csproj",
       "projectName": "Rika_ProductProvider",
-      "projectPath": "C:\\Users\\felix\\source\\repos\\Rika_ProductProvider\\Rika_ProductProvider\\Rika_ProductProvider.csproj",
+      "projectPath": "C:\\PROGRAMMERING\\Projekt\\Rika_ProductProvider\\Rika_ProductProvider.csproj",
       "packagesPath": "C:\\Users\\felix\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\felix\\source\\repos\\Rika_ProductProvider\\Rika_ProductProvider\\obj\\",
+      "outputPath": "C:\\PROGRAMMERING\\Projekt\\Rika_ProductProvider\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

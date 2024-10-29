@@ -1,0 +1,11 @@
+C:\Users\felix\source\repos\Rika_ProductProvider\Rika_ProductProvider.Infrastructure\bin\Debug\net8.0\Rika_ProductProvider.Infrastructure.deps.json
+C:\Users\felix\source\repos\Rika_ProductProvider\Rika_ProductProvider.Infrastructure\bin\Debug\net8.0\Rika_ProductProvider.Infrastructure.dll
+C:\Users\felix\source\repos\Rika_ProductProvider\Rika_ProductProvider.Infrastructure\bin\Debug\net8.0\Rika_ProductProvider.Infrastructure.pdb
+C:\Users\felix\source\repos\Rika_ProductProvider\Rika_ProductProvider.Infrastructure\obj\Debug\net8.0\Rika_ProductProvider.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\felix\source\repos\Rika_ProductProvider\Rika_ProductProvider.Infrastructure\obj\Debug\net8.0\Rika_ProductProvider.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\felix\source\repos\Rika_ProductProvider\Rika_ProductProvider.Infrastructure\obj\Debug\net8.0\Rika_ProductProvider.Infrastructure.AssemblyInfo.cs
+C:\Users\felix\source\repos\Rika_ProductProvider\Rika_ProductProvider.Infrastructure\obj\Debug\net8.0\Rika_ProductProvider.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\felix\source\repos\Rika_ProductProvider\Rika_ProductProvider.Infrastructure\obj\Debug\net8.0\Rika_ProductProvider.Infrastructure.dll
+C:\Users\felix\source\repos\Rika_ProductProvider\Rika_ProductProvider.Infrastructure\obj\Debug\net8.0\refint\Rika_ProductProvider.Infrastructure.dll
+C:\Users\felix\source\repos\Rika_ProductProvider\Rika_ProductProvider.Infrastructure\obj\Debug\net8.0\Rika_ProductProvider.Infrastructure.pdb
+C:\Users\felix\source\repos\Rika_ProductProvider\Rika_ProductProvider.Infrastructure\obj\Debug\net8.0\ref\Rika_ProductProvider.Infrastructure.dll

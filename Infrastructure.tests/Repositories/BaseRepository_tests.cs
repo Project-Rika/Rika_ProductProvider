@@ -119,10 +119,10 @@ public class BaseRepository_tests
         // Arrange
         var entity = new SampleEntity { Id = 0, Name = "Test" };
 
-        _repositoryMock.Setup(x => x.GetOneAsync(entity.Id)).ReturnsAsync(entity);
+        _repositoryMock.Setup(x => x.GetOneAsync(x => entity.Id == entity.Id)).ReturnsAsync(entity);
 
         // Act
-        var result = await _repository.GetOneAsync(entity.Id);
+        var result = await _repository.GetOneAsync(x => entity.Id == entity.Id);
 
         // Assert
         Assert.NotNull(result);
@@ -136,10 +136,10 @@ public class BaseRepository_tests
         // Arrange
         var entity = new SampleEntity { Id = 0, Name = "Test" };
 
-        _repositoryMock.Setup(x => x.GetOneAsync(entity.Id)).ReturnsAsync((SampleEntity)null);
+        _repositoryMock.Setup(x => x.GetOneAsync(x => entity.Id == entity.Id)).ReturnsAsync((SampleEntity)null!);
 
         // Act
-        var result = await _repository.GetOneAsync(entity.Id);
+        var result = await _repository.GetOneAsync(x => entity.Id == entity.Id);
 
         // Assert
         Assert.Null(result);

@@ -2,9 +2,9 @@
 
 public class ProductColorEntity
 {
-    public int ProductColorId { get; set; }
+    public int Id { get; set; }
 
-    public string ProductColorName { get; set; } = null!;
+    public string ColorName { get; set; } = null!;
 
     public ICollection<ProductEntity> Products { get; set; } = new List<ProductEntity>();
 }

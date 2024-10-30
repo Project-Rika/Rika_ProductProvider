@@ -1,5 +1,8 @@
-﻿using Rika_ProductProvier.Infrastructure.Data.Contexts;
+﻿using Microsoft.EntityFrameworkCore;
+using Rika_ProductProvier.Infrastructure.Data.Contexts;
 using Rika_ProductProvier.Infrastructure.Interfaces;
+using System;
+using System.Linq.Expressions;
 
 namespace Rika_ProductProvier.Infrastructure.Repositories;
 
@@ -26,23 +29,69 @@ public class BaseRepository<TEntity> : IBaseRepository<TEntity> where TEntity : 
         }
     }
 
-    public Task<TEntity> DeleteOneAsync(TEntity entity)
+    public virtual async Task<TEntity> DeleteOneAsync(TEntity entity)
     {
-        throw new NotImplementedException();
+        try
+        {
+            _context.Set<TEntity>().Remove(entity);
+            await _context.SaveChangesAsync();
+            return entity;
+        }
+        catch (Exception ex)
+        {
+            throw new Exception(ex.Message);
+        }
     }
 
-    public Task<IEnumerable<TEntity>> GetAllAsync()
+    public virtual async Task<IEnumerable<TEntity>> GetAllAsync()
     {
-        throw new NotImplementedException();
+        try
+        {
+            return await _context.Set<TEntity>().ToListAsync();
+        }
+        catch (Exception ex)
+        {
+            throw new Exception(ex.Message);
+        }
     }
 
-    public Task<TEntity> GetOneAsync(int id)
+    public virtual async Task<List<TEntity>> GetAllAsync(Expression<Func<TEntity, bool>> predicate)
     {
-        throw new NotImplementedException();
+        try
+        {
+            return await _context.Set<TEntity>().Where(predicate).ToListAsync();
+        }
+        catch (Exception ex)
+        {
+            throw new Exception(ex.Message);
+        }
     }
 
-    public Task<TEntity> UpdateOneAsync(TEntity entity)
+    public virtual Task<TEntity> GetOneAsync(Expression<Func<TEntity, bool>> predicate)
     {
-        throw new NotImplementedException();
+        try
+        {
+            var result = _context.Set<TEntity>().FirstOrDefaultAsync(predicate)!;
+            return result!;
+        }
+        catch (Exception ex)
+        {
+            throw new Exception(ex.Message);
+        }
+    }
+
+    public virtual async Task<TEntity> UpdateOneAsync(TEntity entity)
+    {
+        try
+        {
+            _context.Set<TEntity>().Update(entity);
+            await _context.SaveChangesAsync();
+
+            return entity;
+        }
+        catch (Exception ex)
+        {
+            throw new Exception(ex.Message);
+        }
     }
 }

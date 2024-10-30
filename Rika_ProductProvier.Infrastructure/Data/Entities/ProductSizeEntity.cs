@@ -2,7 +2,7 @@
 
 public class ProductSizeEntity
 {
-    public int ProductSizeId { get; set; }
+    public int Id { get; set; }
     public string ProductSizeName { get; set; } = null!;
     public ICollection<ProductEntity> Products { get; set; } = new List<ProductEntity>();
 }

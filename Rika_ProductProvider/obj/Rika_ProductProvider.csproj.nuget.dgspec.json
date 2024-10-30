@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\PROGRAMMERING\\Projekt\\Rika_ProductProvider\\Rika_ProductProvider.csproj": {}
+    "C:\\PROGRAMMERING\\Projekt\\Infrastructure\\Rika_ProductProvider\\Rika_ProductProvider.csproj": {}
   },
   "projects": {
-    "C:\\PROGRAMMERING\\Projekt\\Rika_ProductProvider\\Rika_ProductProvider.csproj": {
+    "C:\\PROGRAMMERING\\Projekt\\Infrastructure\\Rika_ProductProvider\\Rika_ProductProvider.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\PROGRAMMERING\\Projekt\\Rika_ProductProvider\\Rika_ProductProvider.csproj",
+        "projectUniqueName": "C:\\PROGRAMMERING\\Projekt\\Infrastructure\\Rika_ProductProvider\\Rika_ProductProvider.csproj",
         "projectName": "Rika_ProductProvider",
-        "projectPath": "C:\\PROGRAMMERING\\Projekt\\Rika_ProductProvider\\Rika_ProductProvider.csproj",
+        "projectPath": "C:\\PROGRAMMERING\\Projekt\\Infrastructure\\Rika_ProductProvider\\Rika_ProductProvider.csproj",
         "packagesPath": "C:\\Users\\felix\\.nuget\\packages\\",
-        "outputPath": "C:\\PROGRAMMERING\\Projekt\\Rika_ProductProvider\\obj\\",
+        "outputPath": "C:\\PROGRAMMERING\\Projekt\\Infrastructure\\Rika_ProductProvider\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -69,6 +69,10 @@
             "Microsoft.Azure.Functions.Worker.Sdk": {
               "target": "Package",
               "version": "[1.18.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.InMemory": {
+              "target": "Package",
+              "version": "[8.0.10, )"
             }
           },
           "imports": [

@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Rika_ProductProvider", "Rik
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Rika_ProductProvier.Infrastructure", "Rika_ProductProvier.Infrastructure\Rika_ProductProvier.Infrastructure.csproj", "{93358F83-F4D1-4A76-A3F5-0DA3347A131F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure.tests", "Infrastructure.tests\Infrastructure.tests.csproj", "{E916AEB1-458A-48AA-B4BA-4DDDADDC3D26}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infrastructure.tests", "Infrastructure.tests\Infrastructure.tests.csproj", "{E916AEB1-458A-48AA-B4BA-4DDDADDC3D26}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

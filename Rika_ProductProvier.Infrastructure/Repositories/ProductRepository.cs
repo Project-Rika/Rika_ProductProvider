@@ -26,7 +26,7 @@ public class ProductRepository(ProductDbContext context) : BaseRepository<Produc
         }
     }
 
-    public override async Task<IEnumerable<ProductEntity>> GetAllAsync()
+    public override async Task<List<ProductEntity>> GetAllAsync()
     {
         try
         {

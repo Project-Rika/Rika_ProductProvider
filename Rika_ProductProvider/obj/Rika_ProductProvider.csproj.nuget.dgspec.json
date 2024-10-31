@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\hampu\\source\\repos\\Rika_ProductProvider\\Rika_ProductProvider\\Rika_ProductProvider.csproj": {}
+    "C:\\Users\\hampu\\Source\\Repos\\Rika_ProductProvider\\Rika_ProductProvider\\Rika_ProductProvider.csproj": {}
   },
   "projects": {
-    "C:\\Users\\hampu\\source\\repos\\Rika_ProductProvider\\Rika_ProductProvider\\Rika_ProductProvider.csproj": {
+    "C:\\Users\\hampu\\Source\\Repos\\Rika_ProductProvider\\Rika_ProductProvider\\Rika_ProductProvider.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\hampu\\source\\repos\\Rika_ProductProvider\\Rika_ProductProvider\\Rika_ProductProvider.csproj",
+        "projectUniqueName": "C:\\Users\\hampu\\Source\\Repos\\Rika_ProductProvider\\Rika_ProductProvider\\Rika_ProductProvider.csproj",
         "projectName": "Rika_ProductProvider",
-        "projectPath": "C:\\Users\\hampu\\source\\repos\\Rika_ProductProvider\\Rika_ProductProvider\\Rika_ProductProvider.csproj",
+        "projectPath": "C:\\Users\\hampu\\Source\\Repos\\Rika_ProductProvider\\Rika_ProductProvider\\Rika_ProductProvider.csproj",
         "packagesPath": "C:\\Users\\hampu\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\hampu\\source\\repos\\Rika_ProductProvider\\Rika_ProductProvider\\obj\\",
+        "outputPath": "C:\\Users\\hampu\\Source\\Repos\\Rika_ProductProvider\\Rika_ProductProvider\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\hampu\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -29,8 +29,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\hampu\\source\\repos\\Rika_ProductProvider\\Rika_ProductProvier.Infrastructure\\Rika_ProductProvier.Infrastructure.csproj": {
-                "projectPath": "C:\\Users\\hampu\\source\\repos\\Rika_ProductProvider\\Rika_ProductProvier.Infrastructure\\Rika_ProductProvier.Infrastructure.csproj"
+              "C:\\Users\\hampu\\Source\\Repos\\Rika_ProductProvider\\Rika_ProductProvier.Infrastructure\\Rika_ProductProvier.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\hampu\\Source\\Repos\\Rika_ProductProvider\\Rika_ProductProvier.Infrastructure\\Rika_ProductProvier.Infrastructure.csproj"
               }
             }
           }
@@ -61,6 +61,10 @@
             "Microsoft.Azure.Functions.Worker.ApplicationInsights": {
               "target": "Package",
               "version": "[1.4.0, )"
+            },
+            "Microsoft.Azure.Functions.Worker.Extensions.Http": {
+              "target": "Package",
+              "version": "[3.2.0, )"
             },
             "Microsoft.Azure.Functions.Worker.Extensions.Http.AspNetCore": {
               "target": "Package",
@@ -93,6 +97,14 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[8.0.10, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            },
+            "System.Text.Json": {
+              "target": "Package",
+              "version": "[8.0.5, )"
             }
           },
           "imports": [
@@ -118,14 +130,14 @@
         }
       }
     },
-    "C:\\Users\\hampu\\source\\repos\\Rika_ProductProvider\\Rika_ProductProvier.Infrastructure\\Rika_ProductProvier.Infrastructure.csproj": {
+    "C:\\Users\\hampu\\Source\\Repos\\Rika_ProductProvider\\Rika_ProductProvier.Infrastructure\\Rika_ProductProvier.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\hampu\\source\\repos\\Rika_ProductProvider\\Rika_ProductProvier.Infrastructure\\Rika_ProductProvier.Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\hampu\\Source\\Repos\\Rika_ProductProvider\\Rika_ProductProvier.Infrastructure\\Rika_ProductProvier.Infrastructure.csproj",
         "projectName": "Rika_ProductProvier.Infrastructure",
-        "projectPath": "C:\\Users\\hampu\\source\\repos\\Rika_ProductProvider\\Rika_ProductProvier.Infrastructure\\Rika_ProductProvier.Infrastructure.csproj",
+        "projectPath": "C:\\Users\\hampu\\Source\\Repos\\Rika_ProductProvider\\Rika_ProductProvier.Infrastructure\\Rika_ProductProvier.Infrastructure.csproj",
         "packagesPath": "C:\\Users\\hampu\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\hampu\\source\\repos\\Rika_ProductProvider\\Rika_ProductProvier.Infrastructure\\obj\\",
+        "outputPath": "C:\\Users\\hampu\\Source\\Repos\\Rika_ProductProvider\\Rika_ProductProvier.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\hampu\\AppData\\Roaming\\NuGet\\NuGet.Config",

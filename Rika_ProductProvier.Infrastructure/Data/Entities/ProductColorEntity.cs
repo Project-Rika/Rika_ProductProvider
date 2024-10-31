@@ -1,4 +1,6 @@
-﻿namespace Rika_ProductProvier.Infrastructure.Data.Entities;
+﻿using System.Text.Json.Serialization;
+
+namespace Rika_ProductProvier.Infrastructure.Data.Entities;
 
 public class ProductColorEntity
 {
@@ -6,5 +8,6 @@ public class ProductColorEntity
 
     public string ColorName { get; set; } = null!;
 
+    [JsonIgnore]
     public ICollection<ProductEntity> Products { get; set; } = new List<ProductEntity>();
 }

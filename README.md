@@ -55,3 +55,24 @@ The list of products schema:
             "colorName": "Red"
         }
     }
+
+
+
+# Create
+
+## Create a product
+
+To create a product and save to products DB use a POST http request with schema as below:
+
+    {
+        "ProductName": "ExampleProduct",
+        "ProductPrice": 0.00,
+        "ProductSalePrice": 0.00,
+        "ProductDescription": "An example product.",
+        "ProductCategoryId": 1,
+        "ProductSizeId": 2,
+        "ProductColorId": 3
+    }
+
+
+    

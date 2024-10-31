@@ -5,6 +5,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rika_ProductProvier.Infrastructure.Repositories;
 using Microsoft.Extensions.Configuration;
+using Rika_ProductProvier.Infrastructure.Interfaces;
 
 var host = new HostBuilder()
     .ConfigureFunctionsWebApplication()
@@ -13,7 +14,7 @@ var host = new HostBuilder()
         services.AddApplicationInsightsTelemetryWorkerService();
         services.ConfigureFunctionsApplicationInsights();
 
-        services.AddPooledDbContextFactory<ProductDbContext>(options =>
+        services.AddDbContext<ProductDbContext>(options =>
         {
             options.UseSqlServer(context.Configuration.GetConnectionString("SqlServer"));
         });

@@ -43,7 +43,7 @@ public class BaseRepository<TEntity> : IBaseRepository<TEntity> where TEntity : 
         }
     }
 
-    public virtual async Task<IEnumerable<TEntity>> GetAllAsync()
+    public virtual async Task<List<TEntity>> GetAllAsync()
     {
         try
         {

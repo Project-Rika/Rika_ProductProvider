@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using Rika_ProductProvider.Models.RequestModels;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Rika_ProductProvier.Infrastructure.Data.Entities;
@@ -17,4 +18,21 @@ public class ProductEntity
     
     public int? ProductColorId { get; set; }
     public ProductColorEntity? ProductColor { get; set; }
+
+    public static implicit operator ProductEntity(CreateProductRequest createRequest)
+    {
+        return new ProductEntity
+        {
+            Id = createRequest.Id,
+            ProductName = createRequest.ProductName,
+            ProductPrice = createRequest.ProductPrice,
+            ProductSalePrice = createRequest.ProductSalePrice,
+            ProductDescription = createRequest.ProductDescription,
+
+
+            ProductCategoryId = createRequest.ProductCategoryId,
+            ProductColorId = createRequest.ProductColorId,
+            ProductSizeId = createRequest.ProductSizeId,
+        };
+    }
 }

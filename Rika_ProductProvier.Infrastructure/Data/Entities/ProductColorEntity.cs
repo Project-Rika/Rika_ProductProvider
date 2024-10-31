@@ -8,3 +8,5 @@ public class ProductColorEntity
 
     public ICollection<ProductEntity> Products { get; set; } = new List<ProductEntity>();
 }
+
+/* hej */

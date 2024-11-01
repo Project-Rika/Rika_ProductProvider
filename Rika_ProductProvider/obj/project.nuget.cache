@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "5wmMioAh7D0=",
+  "dgSpecHash": "Jajjlg1QNJQ=",
   "success": true,
-  "projectFilePath": "C:\\Users\\hampu\\Source\\Repos\\Rika_ProductProvider123\\Rika_ProductProvider\\Rika_ProductProvider.csproj",
+  "projectFilePath": "C:\\Users\\hampu\\Source\\Repos\\Rika_ProductProvider\\Rika_ProductProvider\\Rika_ProductProvider.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\hampu\\.nuget\\packages\\azure.core\\1.41.0\\azure.core.1.41.0.nupkg.sha512",
     "C:\\Users\\hampu\\.nuget\\packages\\azure.identity\\1.12.0\\azure.identity.1.12.0.nupkg.sha512",

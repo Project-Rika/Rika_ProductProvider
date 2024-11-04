@@ -2,6 +2,8 @@
 
 ## GetOne with Query params
 To get a single product call the api with a GET http request with a query param named "ProductId".
+
+Example:
 /api/GetOne?ProductId=PRODUCTID
 
 If there is no product in the DB with the selected ID the api will return "204 - no content".

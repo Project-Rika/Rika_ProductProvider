@@ -85,32 +85,32 @@ public class BaseRepository_tests
     public async Task DeleteOneAsync_ShouldRemoveEntity()
     {
         // Arrange
+
         var entity = new SampleEntity { Id = 0, Name = "Test" };
 
-        _repositoryMock.Setup(x => x.DeleteOneAsync(entity)).ReturnsAsync(entity);
+        _repositoryMock.Setup(x => x.DeleteOneAsync(x => entity.Id == 0)).ReturnsAsync(true);
 
         // Act
-        var result = await _repository.DeleteOneAsync(entity);
+        var result = await _repository.DeleteOneAsync(x => entity.Id == 0);
 
         // Assert
-        Assert.NotNull(result);
-        Assert.IsType<SampleEntity>(result);
+        Assert.True(result);
     }
 
     [Fact]
 
-    public async Task DeleteOneAsync_ShouldReturnNull_IfNameIsNull()
+    public async Task DeleteOneAsync_ShouldReturnNull_IfIdDoesNotExist()
     {
         // Arrange
-        var entity = new SampleEntity { Id = 0, Name = null };
+        var entity = new SampleEntity { Id = 0, Name = "Test" };
 
-        _repositoryMock.Setup(x => x.DeleteOneAsync(entity)).ReturnsAsync((SampleEntity)null);
+        _repositoryMock.Setup(x => x.DeleteOneAsync(x => entity.Id == 1)).ReturnsAsync(false);
 
         // Act
-        var result = await _repository.DeleteOneAsync(entity);
+        var result = await _repository.DeleteOneAsync(x => entity.Id == 1);
 
         // Assert
-        Assert.Null(result);
+        Assert.False(result);
     }
 
     [Fact]

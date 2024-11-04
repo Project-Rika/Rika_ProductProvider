@@ -85,4 +85,13 @@ To create a product and save to products DB use a POST http request with schema 
     }
 
 
-    
+# Delete
+
+## Delete a product
+
+To delete a product use a POST http request with schema as below:
+
+    {
+        "id": "STRING_ID"
+    }
+

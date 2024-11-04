@@ -184,4 +184,50 @@ public class BaseRepository_tests
         Assert.Empty(result);
     }
 
+
+    [Fact]
+    public async Task GetAllAsync_ShouldReturnEntitiesWithSelectedName()
+    {
+        // Arrange
+        var entities = new List<SampleEntity>
+        {
+            new SampleEntity { Id = 0, Name = "Test1" },
+            new SampleEntity { Id = 1, Name = "Test2" },
+            new SampleEntity { Id = 2, Name = "Test3" },
+            new SampleEntity { Id = 3, Name = "Test3" }
+        };
+
+        _repositoryMock.Setup(x => x.GetAllAsync(x => x.Name == "Test3")).ReturnsAsync(entities.Where(x => x.Name == "Test3").ToList());
+
+        // Act
+        var result = await _repository.GetAllAsync(x => x.Name == "Test3");
+
+        // Assert
+        Assert.NotNull(result);
+        Assert.IsType<List<SampleEntity>>(result);
+        Assert.NotEqual(entities.Count, result.Count());
+    }
+
+    [Fact]
+    public async Task GetAllAsync_ShouldReturnEmptyListIfSelectedNameDoesNotExist()
+    {
+        // Arrange
+        var entities = new List<SampleEntity>
+        {
+            new SampleEntity { Id = 0, Name = "Test1" },
+            new SampleEntity { Id = 1, Name = "Test2" },
+            new SampleEntity { Id = 2, Name = "Test3" },
+            new SampleEntity { Id = 3, Name = "Test3" }
+        };
+
+        _repositoryMock.Setup(x => x.GetAllAsync(x => x.Name == "Test4")).ReturnsAsync(entities.Where(x => x.Name == "Test4").ToList());
+
+        // Act
+        var result = await _repository.GetAllAsync(x => x.Name == "Test4");
+
+        // Assert
+        Assert.NotNull(result);
+        Assert.IsType<List<SampleEntity>>(result);
+        Assert.Empty(result);
+    }
 }

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Rika_ProductProvider")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d3d26bfb0e70690e9a5c2b667ebab2e6a0435ef0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+55a1ff9876dd07b22b959e3dd9feac994c0f81b2")]
 [assembly: System.Reflection.AssemblyProductAttribute("Rika_ProductProvider")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Rika_ProductProvider")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

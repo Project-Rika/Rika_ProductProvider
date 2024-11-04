@@ -6,7 +6,7 @@ namespace Rika_ProductProvier.Infrastructure.Interfaces
     {
         Task<TEntity> CreateOneAsync(TEntity entity);
         Task<TEntity> UpdateOneAsync(TEntity entity);
-        Task<TEntity> DeleteOneAsync(TEntity entity);
+        Task<bool> DeleteOneAsync(Expression<Func<TEntity, bool>> predicate);
         Task<TEntity> GetOneAsync(Expression<Func<TEntity, bool>> predicate);
         Task<List<TEntity>> GetAllAsync();
         Task<List<TEntity>> GetAllAsync(Expression<Func<TEntity, bool>> predicate);

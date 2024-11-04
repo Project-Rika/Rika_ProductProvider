@@ -29,13 +29,21 @@ public class BaseRepository<TEntity> : IBaseRepository<TEntity> where TEntity : 
         }
     }
 
-    public virtual async Task<TEntity> DeleteOneAsync(TEntity entity)
+    public virtual async Task<bool> DeleteOneAsync(Expression<Func <TEntity, bool>> predicate)
     {
         try
         {
-            _context.Set<TEntity>().Remove(entity);
-            await _context.SaveChangesAsync();
-            return entity;
+            var entity = await _context.Set<TEntity>().FirstOrDefaultAsync(predicate);
+
+            if(entity != null)
+            {
+                _context.Set<TEntity>().Remove(entity);
+                await _context.SaveChangesAsync();
+
+                return true;
+            }
+
+            return false;
         }
         catch (Exception ex)
         {

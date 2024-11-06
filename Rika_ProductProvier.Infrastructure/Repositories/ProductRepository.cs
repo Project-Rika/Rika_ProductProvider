@@ -77,4 +77,20 @@ public class ProductRepository(ProductDbContext context) : BaseRepository<Produc
             throw new Exception(ex.Message);
         }
     }
+
+    public override async Task<ProductEntity> UpdateOneAsync(ProductEntity entity)
+    {
+        try
+        {
+            _context.Products.Update(entity);
+            await _context.SaveChangesAsync();
+            var updatedEntity = await _context.Products.Include(x => x.ProductColor).Include(x => x.ProductSize).FirstOrDefaultAsync(x => x.Id == entity.Id);
+
+                return updatedEntity!;
+        }
+        catch (Exception ex)
+        {
+            throw new Exception(ex.Message);
+        }
+    }
 }

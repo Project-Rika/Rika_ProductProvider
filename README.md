@@ -95,3 +95,22 @@ To delete a product use a POST http request with schema as below:
         "id": "STRING_ID"
     }
 
+
+    
+# Update
+
+## Update a product
+
+To update a product and save to products DB use a POST http request with schema as below:
+
+    {
+        "id": "string",
+        "productName": "ExampleProduct",
+        "productPrice": 0.00,
+        "productSalePrice": 0.00,
+        "productDescription": "An example product.",
+        "productCategoryId": 1,
+        "productSizeId": 2,
+        "productColorId": 3
+    }
+
